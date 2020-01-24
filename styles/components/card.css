@@ -1,14 +1,41 @@
 .card {
+  text-align: center;
 }
 
 .card-title {
+color: #5094f2;
+font-size: 34px;
+font-weight: 400;
 }
 
 .card-description {
+color: #909090;
+font-family: "Segoe WPN";
+font-size: 19px;
+font-weight: 400;
 }
 
-.card-image {
+.card-icon{
+  padding: 19px;
+height: 100px;
+  width: 100px;
+  display: inline-block;
+  border-radius: 50%;
+font-size: 60px;
+  text-align: center;
+  background-color: #5094f2;
+  color: #ffffff;
 }
 
-.card-image > img {
+.card-item:nth-child(2) .card-icon{
+background-color: #d94748;
+}
+.card-item:nth-child(3) .card-icon{
+background-color: #ebbb11;
+}
+
+.card-item{
+  border-bottom: solid rgba(0, 0, 0, 0.2) 1px;
+  margin:0 -20px;
+  padding: 20px;
 }

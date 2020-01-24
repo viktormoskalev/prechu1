@@ -2,15 +2,16 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "Roboto";
-  background-color: #ffffff;
-  color: #000000;
+color: #909090;
+font-family: "Segoe WPN";
+font-size: 17px;
+font-weight: 300;
+line-height: 36px;
 }
 
+
 .container {
-  width: 800px;
+padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -32,16 +33,20 @@ figure {
   margin: 0;
 }
 
+p{
+color: #909090;
+font-family: "Segoe WPN";
+font-size: 15px;
+font-weight: 300;
+  text-align: center;
+}
+
 img {
   width: 100%;
   height: auto;
 }
 
-p,
-ul,
-ol {
-  margin: 0 0 15px 0;
-}
+
 
 * + p,
 * + ul,
@@ -65,4 +70,9 @@ h6 {
 * + h5,
 * + h6 {
   margin-top: 0.67em;
+}
+
+.footer{
+  padding: 20px;
+  border-top: solid 1px rgba(0, 0, 0, 0.2);
 }

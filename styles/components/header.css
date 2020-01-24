@@ -1,0 +1,58 @@
+.header {
+  padding: 26px 0;
+  font-size: 0;
+
+}
+
+.header .grid {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo div {
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  background-color: #5094f2;
+  border-radius: 50%;
+  color: #ffffff;
+  font-family: "Source Sans Pro";
+  font-size: 75px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: top;
+  line-height: 1.1em;
+}
+
+.logo {
+  color: #000000;
+  font-family: "Segoe WP";
+  font-size: 49px;
+  font-weight: 300;
+  letter-spacing: 0.42px;
+  line-height: 43px;
+}
+
+.line {
+  width: 37px;
+  height: 6px;
+  background-color: #ffffff;
+  margin-bottom: 3px;
+}
+
+.line:last-child {
+  margin-bottom: 0;
+}
+
+.button-nav {
+  display: inline-block;
+  padding: 10px;
+  background-color: #5094f2;
+}
+
+.nav {
+  background: green;
+  margin: 0;
+  padding: 0;
+  
+}

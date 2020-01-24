@@ -1,11 +1,14 @@
 .section {
-  position: relative;
-  padding: 100px 0;
+padding:  18px 0;
 }
 
 .section-title {
+  
 }
 .section-subtitle {
 }
 .section-description {
+    font-size: 14px;
+  line-height: 30px;
 }
+

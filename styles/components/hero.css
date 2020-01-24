@@ -1,8 +1,28 @@
-.hero {
-}
 
 .hero-title {
+font-size: 31px;
 }
 
 .hero-subtitle {
+font-size: 23px;
+  }
+
+.hero .grid-item img{
+  width: auto;
+  max-height: 40vh;
+}
+
+.hero .grid-item figure{
+text-align: center;
+}
+
+.hero{
+  text-align: center;
+  color: #ffffff;
+  font-family: "Segoe WP";
+  background-image: url(../../images/dsfsdfsdfds.png);
+  background-size: cover
+}
+.hero p{
+    color: #ffffff;
 }
