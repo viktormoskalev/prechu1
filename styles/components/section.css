@@ -1,14 +1,78 @@
 .section {
-padding:  18px 0;
+padding-top: 15px;
+}
+
+.section .grid {
+  justify-content: center;
+  align-items: center;
 }
 
 .section-title {
-  
-}
-.section-subtitle {
-}
-.section-description {
-    font-size: 14px;
-  line-height: 30px;
+  color: #6f7173;
+  font-family: "Segoe WPN";
+  font-size: 42px;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px 0;
 }
 
+.section-subtitle {}
+
+.section-description {
+color: #909090;
+font-family: "Segoe WPN";
+font-size: 17px;
+font-weight: 300;
+line-height: 36px;
+  margin-bottom: 46px;
+}
+
+.section-image {
+  max-height: 40vh;
+  min-width: 200px;
+  width: auto;
+  margin-top: 15px;
+}
+
+.section figure {
+  text-align: center;
+}
+
+.section-subtitle{
+color: #6f7173;
+font-family: "Segoe WPN";
+font-size: 34px;
+font-weight: 400;
+line-height: 44.42px;
+  margin-bottom: 20px;
+}
+
+.section-shopping{
+
+}
+
+@media (min-width: 640px) {
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+@media (min-width: 960px) {
+.section-image {
+  max-height: 30vh;
+ width: 100%;
+
+}
+  .section-title{
+    margin-top: 1px;
+    margin-bottom: 33px;
+  }
+  
+  .section-description{
+line-height: 36px;
+font-size: 15px;
+  }
+  
+  .section-subtitle{
+    margin-top: 53px;
+  }
+}

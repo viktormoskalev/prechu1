@@ -1,7 +1,7 @@
 .header {
-  padding: 26px 0;
+  padding-top: 22px;
+  padding-bottom: 15px;
   font-size: 0;
-
 }
 
 .header .grid {
@@ -27,7 +27,7 @@
 .logo {
   color: #000000;
   font-family: "Segoe WP";
-  font-size: 49px;
+  font-size: 38px;
   font-weight: 300;
   letter-spacing: 0.42px;
   line-height: 43px;
@@ -37,22 +37,124 @@
   width: 37px;
   height: 6px;
   background-color: #ffffff;
-  margin-bottom: 3px;
+  margin-top: 3px;
 }
 
-.line:last-child {
-  margin-bottom: 0;
+.line:first-child {
+  margin-top: 0;
 }
 
 .button-nav {
+  width: 58px;
+  height: 44px;
   display: inline-block;
   padding: 10px;
   background-color: #5094f2;
 }
 
 .nav {
-  background: green;
   margin: 0;
   padding: 0;
+}
+
+.nav input[type="checkbox"] {
+  display: none;
+}
+
+.nav-item {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  left: 0;
+  font-size:0;
+  transition: 0.4s all;
+  overflow: hidden;
+  }
+
+.nav-item a {
+  line-height: 2em;
+  display: block;
+  background: white;
+outline: rgba(0, 0, 0, 0.34) 1px solid;
+  text-align: center;
+
+}
+
+#menu:checked ~ .nav-item {
+ font-size: 50px;
+  height: auto;
+}
+
+#menu:checked ~ label .line-1 {
+display: none;
+}
+#menu:checked ~ label .line-2 {
+transform: rotate(45deg);
+  margin-top: 9px;
+}
+#menu:checked ~ label .line-3 {
+transform: rotate(-45deg);
+  margin-top: -6px;
+}
+
+@media (min-width: 640px) {
   
+  .logo{
+    font-size: 49px;
+  }
+
+}
+
+@media (min-width: 960px) {
+  
+  .logo{
+    font-size: 42px;
+    letter-spacing: 0.42px;
+  }
+  
+  .button-nav {   
+    
+    display: none;
+  }
+
+.nav-item {
+    position:static;
+  width: 100%;
+color: #6c6c6c;
+font-family: "Segoe WPN";
+font-size: 20px;
+font-weight: 400;
+letter-spacing: 0.2px;
+  }
+  
+.nav-item a {
+    margin-left: 30px;
+  line-height: 60px;
+  display: inline-block;
+ outline: none;
+  text-align: center;
+}
+  .nav a{
+    border-bottom:2px white solid;
+  }
+    .nav .hover:hover{
+    border-bottom:2px #5094f2 solid;
+  }
+  
+  .header{
+   padding-bottom: 0;
+  }
+  
+  .nav {
+  cursor:default;
+}
+
+.nav .is-active {
+  color: rgba(0, 0, 0, 0.24);
+}
+
+.nav .is-active:hover {
+cursor:default;
+}
+
 }

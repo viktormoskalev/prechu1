@@ -1,17 +1,24 @@
 * {
   box-sizing: border-box;
 }
+
 html {
 color: #909090;
 font-family: "Segoe WPN";
 font-size: 17px;
 font-weight: 300;
 line-height: 36px;
+text-align: center;
 }
 
 
 .container {
-padding: 0 10px;
+   max-width: 960px;
+  margin: 0 auto;
+}
+
+.mobile-container{
+  width: calc(100% - 60px);
   margin: 0 auto;
 }
 
@@ -26,7 +33,6 @@ a {
 
 a:hover {
   color: black;
-  text-decoration: underline;
 }
 
 figure {
@@ -38,41 +44,30 @@ color: #909090;
 font-family: "Segoe WPN";
 font-size: 15px;
 font-weight: 300;
-  text-align: center;
+margin: 0;
+}
+ 
+h1 , h2{
+  margin: 0;
 }
 
 img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
-
-
-* + p,
-* + ul,
-* + ol {
-  margin-top: 15px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 0.67em 0;
-}
-
-* + h1,
-* + h2,
-* + h3,
-* + h4,
-* + h5,
-* + h6 {
-  margin-top: 0.67em;
-}
 
 .footer{
-  padding: 20px;
+  text-align: center;
+  padding: 33px;
   border-top: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 640px) {
+  
+  html{
+    text-align: left;
+  }
+
 }

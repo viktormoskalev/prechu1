@@ -33,3 +33,11 @@ color: #5094f2;
   width: 100%;
   font-size: 31px;
 }
+
+
+
+@media (min-width: 640px) {
+  .button-responsive{
+width: auto;
+}
+}

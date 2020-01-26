@@ -12,20 +12,29 @@
   <div class="wrapper">
     <div class="container">
       <header class="header">
-        <div class="grid">
-          <div class="grid-item">
-            <div class="logo">
-              <div>“</div> Prechu
+        <div class="mobile-container">
+          <div class="grid">
+            <div class="grid-item">
+              <div class="logo">
+                <div>“</div> Prechu
+              </div>
             </div>
-          </div>
-          <div class="grid-item">
-            <nav class="nav">
-              <lable class="button-nav">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-              </lable>
-            </nav>
+            <div class="grid-item">
+              <nav class="nav">
+                <input type="checkbox" id="menu">
+                <label class="button-nav" for="menu">
+                 <div class="line line-1"></div>
+                  <div class="line line-2"></div>
+                  <div class="line line-3" ></div>
+                </label>
+                <div class="nav-item">
+                  <a href="#" class="is-active">Home</a>
+                  <a href="#" class="hover">Product</a>
+                  <a href="#" class="hover">Services</a>
+                  <a href="#" class="hover">Contact</a>
+                </div>
+              </nav>
+            </div>
           </div>
         </div>
       </header>
@@ -34,48 +43,60 @@
       <section class="section hero">
         <div class="container">
           <div class="grid">
-            <div class="grid-item width-1-1">
+            <div class="grid-item width-1-1 width-1-3-sm">
               <figure><img src="images/iphone.png" alt="iphone"></figure>
             </div>
-            <div class="grid-item">
-              <h1>Lorem ipsum dolor sit.</h1>
-              <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="grid-item width-2-3-sm ">
+              <h1 class="hero-title">Lorem ipsum is simply</h1>
+              <p class="hero-subtitle">dummy text of the
+                printing & typesetting </p>
+              <button class="button button-primary button-responsive icon-ok">
+                Sign up now
+              </button>
             </div>
-            <button class="button button-primary button-responsive icon-ok">
-              Sign up now
-            </button>
+
           </div>
         </div>
       </section>
       <section class="section section-cards">
         <div class="container">
-          <div class="card">
-            <div class="card-item">
-              <div class="grid">
-                <div class="grid-item  width-1-1"><span class="icon-pan card-icon"></span></div>
-                <div class="grid-item width-1-1">
-                  <p class="card-title">Contrary to popular</p>
-                  <p class="card-description">Lorem Ipsum is not simply random text. It has roots in a piece </p>
+          <div class="grid">
+            <div class="grid-item width-1-1 width-1-3-md">
+              <div class="card">
+                <div class="mobile-container">
+                  <div class="grid grid-medium width-1-1 width-1-1-md">
+                    <div class="grid-item width-1-1 width-1-3-sm width-1-1-md "><span class="icon-pan card-icon"></span></div>
+                    <div class="grid-item width-1-1 width-2-3-sm width-1-1-md">
+                      <p class="card-title">Contrary to popular</p>
+                      <p class="card-description">Lorem Ipsum is not simply random text. It has roots in a piece </p>
+                    </div>
+                  </div>
                 </div>
-
               </div>
             </div>
-            <div class="card-item">
-              <div class="grid">
-                <div class="grid-item  width-1-1"><span class="icon-pan card-icon"></span></div>
-                <div class="grid-item width-1-1">
-                  <p class="card-title">Contrary to popular</p>
-                  <p class="card-description">Lorem Ipsum is not simply random text. It has roots in a piece </p>
+            <div class="grid-item width-1-1 width-1-3-md">
+              <div class="card">
+                <div class="mobile-container">
+                  <div class="grid grid-medium">
+                    <div class="grid-item width-1-1 width-1-3-sm width-1-1-md"><span class="icon-display icon-red card-icon"></span></div>
+                    <div class=" width-1-1 width-2-3-sm width-1-1-md">
+                      <p class="card-title">Contrary to popular</p>
+                      <p class="card-description">Lorem Ipsum is not simply random text. It has roots in a piece </p>
+                    </div>
+                  </div>
                 </div>
-
               </div>
             </div>
-            <div class="card-item">
-              <div class="grid">
-                <div class="grid-item  width-1-1"><span class="icon-pan card-icon"></span></div>
-                <div class="grid-item width-1-1">
-                  <p class="card-title">Contrary to popular</p>
-                  <p class="card-description">Lorem Ipsum is not simply random text. It has roots in a piece </p>
+            <div class="grid-item width-1-1 width-1-3-md">
+              <div class="card">
+                <div class="mobile-container">
+                  <div class="grid grid-medium">
+                    <div class="grid-item width-1-1 width-1-3-sm width-1-1-md"><span class="icon-basket icon-yellow card-icon"></span></div>
+                    <div class="grid-item width-1-1 width-2-3-sm width-1-1-md">
+                      <p class="card-title">Contrary to popular</p>
+                      <p class="card-description">Lorem Ipsum is not simply random text. It has roots in a piece </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -84,31 +105,38 @@
       </section>
 
       <section class="section section-shopping">
-       <div class="container">
-        <div class="grid">
-          <div class="grid-item width-1-1">
-            <div class="card"> 
-            <h2>The Shopping cart</h2>
-            <figure>
-              <img src="images/cart.png" alt="bask">
-                          </figure>
+        <div class="container">
+          <div class="mobile-container">
+            <div class="grid grid-large">
+
+              <div class="grid-item widt h-1-1 width-1-2-md">
+                <h2 class="section-title">The Shopping cart</h2>
+                <figure>
+                  <img class="section-image" src="images/cart.png" alt="basket">
+                </figure>
+              </div>
+              <div class="grid-item width-1-1 width-1-2-md">
+
+                <h2 class="section-subtitle">Some Bullet text here</h2>
+                <p class="section-description">Lorem Ipsum is simply dummy text of the printing and typesetting
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  When an unknown printer took a galley of type and scrambled
+                  It to make a type specimen book. It has survived not only five centuries
+                  But also the leap into electronic typesetting,
+                  Remaining essentially unchanged. It was popularised
+                  The release of Letraset sheets containing Lorem Ipsum passages</p>
+              </div>
+
             </div>
           </div>
-          <div class="grid-item width-1-1">
-            <p class="section-description">Lorem Ipsum is simply dummy text of the printing and typesetting 
-Lorem Ipsum has been the industry's standard dummy text ever 
-When an unknown printer took a galley of type and scrambled 
-It to make a type specimen book. It has survived not only five centuries
-But also the leap into electronic typesetting,
-Remaining essentially unchanged. It was popularised 
-The release of Letraset sheets containing Lorem Ipsum passages</p>
-          </div>
-</div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <p>Copyright © 2012-2013 cssauthor.com</p>
+      <div class="container">
+        <p>Copyright © 2012-2013 cssauthor.com</p>
+      </div>
     </footer>
+
   </div>
 </body></html>
