@@ -56,8 +56,17 @@
   background-color: #5094f2;
 }
 
+.label-nav {
+  width: 58px;
+  height: 44px;
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+  margin-left: -58px;
+}
+
 .nav {
-  margin: 0;
+margin: 0;
   padding: 0;
 }
 
@@ -90,20 +99,22 @@
   height: auto;
 }
 
-#menu:checked ~ label .line-1 {
+#menu:checked ~ .button-nav .line-1 {
   display: none;
 }
 
-#menu:checked ~ label .line-2 {
+#menu:checked ~ .button-nav .line-2 {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   margin-top: 9px;
+  transition: 0.2s all;
 }
 
-#menu:checked ~ label .line-3 {
+#menu:checked ~ .button-nav .line-3 {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   margin-top: -6px;
+   transition: 0.2s all;
 }
 
 @media (min-width: 640px) {
@@ -130,13 +141,14 @@
   .button-nav {
     display: none;
   }
-
+  .nav-item a {
+    font-size: 20px;
+  }
   .nav-item {
     position: static;
     width: 100%;
     color: #6c6c6c;
     font-family: "Segoe WPN";
-    font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.2px;
   }
