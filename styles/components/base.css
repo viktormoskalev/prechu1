@@ -1,24 +1,20 @@
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 html {
-color: #909090;
-font-family: "Segoe WPN";
-font-size: 17px;
-font-weight: 300;
-line-height: 36px;
-text-align: center;
+  color: #909090;
+  font-family: "Segoe WPN";
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 36px;
+  text-align: center;
 }
 
 
-.container {
-   max-width: 960px;
-  margin: 0 auto;
-}
-
-.mobile-container{
-  width: calc(100% - 60px);
+.mobile-container {
+  width: calc(100% - 10px);
   margin: 0 auto;
 }
 
@@ -26,6 +22,7 @@ text-align: center;
   position: relative;
   overflow: hidden;
 }
+
 a {
   color: black;
   text-decoration: none;
@@ -39,35 +36,54 @@ figure {
   margin: 0;
 }
 
-p{
-color: #909090;
-font-family: "Segoe WPN";
-font-size: 15px;
-font-weight: 300;
-margin: 0;
+p {
+  color: #909090;
+  font-family: "Segoe WPN";
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
 }
- 
-h1 , h2{
+
+h1,
+h2 {
   margin: 0;
 }
 
 img {
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
-
-.footer{
+.footer {
+  line-height: 32px;
   text-align: center;
   padding: 33px;
   border-top: solid 1px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 640px) {
-  
-  html{
+
+  html {
     text-align: left;
   }
 
+  .mobile-container {
+    width: calc(100% - 60px);
+  }
+
+}
+
+@media (min-width: 960px) {
+  .mobile-container {
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
 }

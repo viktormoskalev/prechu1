@@ -9,35 +9,53 @@
   text-align: center;
   text-decoration: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
+
 .button:hover {
   text-decoration: none;
 }
 
-
 .button-primary {
-background-color: #5094f2;
-color: #ffffff;
+  background-color: #5094f2;
+  color: #ffffff;
 }
 
 .button-primary:hover {
   background-color: #000000;
-background-color: #ffffff;
-color: #5094f2;
-  
+  background-color: #ffffff;
+  color: #5094f2;
 }
 
-.button-responsive{
+.button-responsive {
   padding: 12px;
   width: 100%;
   font-size: 31px;
+  vertical-align: top;
 }
 
-
+.icon-ok::before {
+  display: inline-block;
+  height: 30px;
+  vertical-align: bottom;
+}
 
 @media (min-width: 640px) {
-  .button-responsive{
-width: auto;
+  .button-responsive {
+    width: auto;
+  }
 }
+
+@media (min-width: 960px) {
+  .hero .button-responsive {
+    font-size: 22px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 12px;
+  }
+
+  .icon-ok::before {
+    height: auto;
+  }
 }

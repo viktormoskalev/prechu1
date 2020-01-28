@@ -4,15 +4,14 @@
   margin-bottom: 0;
 }
 
-.section.hero{
-padding-bottom: 0;
+.section.hero {
+  padding-bottom: 0;
 }
 
 .hero-subtitle {
-  font-size: 23px;
+  font-size: 16px;
   font-weight: 100;
   line-height: 35.94px;
-  padding-right: 50px;
 }
 
 .hero .grid-item img {
@@ -20,15 +19,15 @@ padding-bottom: 0;
   max-height: 40vh;
 }
 
-.hero .button{
-margin: 33px 0;
+.hero .button {
+  margin: 33px 0;
 }
 
 .hero .grid-item figure {
   text-align: center;
 }
 
-.hero.section{
+.hero.section {
   color: #ffffff;
   font-family: "Segoe WP";
   background-image: url(../../images/dsfsdfsdfds.png);
@@ -42,27 +41,72 @@ margin: 33px 0;
 
 @media (min-width: 640px) {
   .hero .grid-item img {
-  width: 100%;
+    width: 100%;
   }
 
-.hero .grid-item:nth-child(2){
-  padding-left: 60px;
+  .hero .grid-item:nth-child(2) {
+    padding-left: 60px;
+  }
+
+  .hero.section {
+    padding: 10px 37px;
+  }
+
+  .hero-subtitle {
+    padding-right: 50px;
+    font-size: 23px;
+  }
 }
-.hero.section{
-  padding: 10px 37px;
-}
-  
-}
-@media (min-width: 940px) {
+
+@media (min-width: 960px) {
+  .border-hero {
+    height: 15px;
+    background-image: url(../../images/decore.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+
+  .hero.section .grid {
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
   .hero .grid-item img {
-  width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: none;
   }
 
-.hero .grid-item:nth-child(2){
-  padding-left: 60px;
-}
-.hero.section{
-  padding: 10px 37px;
-}
-  
+  .hero .grid-item:nth-child(1) {
+    width: 384px;
+    padding-left: 36px;
+  }
+
+  .hero .grid-item:nth-child(2) {
+    width: 483px;
+    padding: 0;
+  }
+
+  .hero.section {
+    padding-top: 37px;
+  }
+
+  .hero-subtitle {
+    font-size: 26px;
+    font-weight: 100;
+    line-height: 44.42px;
+    padding-right: 120px;
+  }
+
+  .hero-title {
+    padding-right: 70px;
+    font-size: 42px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
 }

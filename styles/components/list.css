@@ -1,2 +1,25 @@
 .list {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.list-item {
+  color: #909090;
+  font-family: "Segoe WPN";
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.list-item :last-child {
+  margin-bottom: 9px;
+}
+
+@media (min-width: 960px) {
+  .list-item {
+    font-size: 15px;
+    margin-bottom: 19px;
+  }
 }
